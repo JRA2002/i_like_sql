@@ -1,0 +1,27 @@
+/* Contenedor principal que utiliza flexbox para dividir verticalmente */
+.vertical-container {
+    display: flex;
+    flex-direction: row; /* Coloca los divs en una columna (uno encima del otro) */
+    height: 100vh; /* El contenedor ocupa toda la altura de la ventana */
+}
+
+/* Div superior */
+.left-div {
+    
+    flex: 1; /* Hace que este div ocupe la mitad del contenedor */
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* Div inferior */
+.right-div {
+    background-color: #f44336; /* Color de fondo */
+    flex: 1; /* Hace que este div ocupe la mitad del contenedor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor Ace en Flask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <h1>Ace Editor Integrado en Flask</h1>
+    
+    <div class="vertical-container">
+        <div id="editor" class="left-div"># Escribe tu código aquí...</div>
+        <div id="questions" class="right-div"># questions here...</div>
+    </div>
+    <!-- Incluir la librería de Ace Editor desde un CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+
+    <script src="{{ url_for('static', filename='js/editor_config.js') }}"></script>
+
+    
+
+</body>
+</html>
